@@ -5,8 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Brand/letra-m.png" type="image/png">
     <title>Inicio - Avril Daboin</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        color: #212121;
+      }
+
+      h2 {
+        color: #9A9483;
+        margin-top: unset;
+      }
+
+      .nav-element {
+        display: inline;
+        float: right;
+        height: 36px;
+      }
+
+      .nav-element {
+        display: inline;
+        padding: 4px;
+        margin-right: 10px;
+      }
+    </style>
 </head>
+
 
 <body>
     <!-- Inicia navbar -->
@@ -16,12 +42,12 @@
         src: Origen de la imagen 
         alt: Descripción de la imagen  
       -->
-      <ul style="display: inline; float: right; height: 36px;">
-          <li style="display: inline; padding: 4px; margin-right: 10px;">
+      <ul class="nav-link">
+          <li class="nav-element">
             <a href="https://github.com/AvrilDaboin18" style="text-decoration: none;">Github</a> 
           </li>
 
-          <li style="display: inline; padding: 4px; margin-right: 10px;">
+          <li class="nav-element">
              <a href="#" style="text-decoration: none;">LinkedIn</a> 
           </li>
       </ul>
@@ -29,16 +55,16 @@
   </nav>  
     <!-- Finaliza navbar -->
     <!-- Inicia header -->
-  <header style="background-color: #E4CDA7;">
-      <img src="Brand/Avatar.png" alt="Foto de Perfil" width="30%">
+  <header>
+      <img src="Brand/Avatar.png" alt="Foto de Perfil">
       <div style="display: inline; position: absolute; padding: 15px 50px 15px 50px;">
-      <h4>
+      <h4 class="tittle-job">
           React Developer
       </h4>
-      <h1>
+      <h1 class="tittle-header">
           ¡Hola soy <span>Mary Avril Daboin Andarcia</span> y me gustaría ayudarte a desarrollar tus ideas!
       </h1>
-      <a href="https://github.com/AvrilDaboin18">
+      <a class="button-header" href="https://github.com/AvrilDaboin18">
           Ver más
       </a>
     </div>
@@ -48,7 +74,7 @@
   </header>
     <!-- Finaliza header-->
     <!-- Inicia sección de descripción -->
-  <section style="background-color: #FFE6BC;">
+  <section style="padding: 0px 80px 0px 80px;">
    <p>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cumque quae qui voluptate illum ipsam dicta vel officia illo tempora dolorum inventore eligendi ex. Saepe.
    </p>
@@ -124,13 +150,16 @@
    </section>
     <!-- Finaliza sección de Habilidades -->
     <!-- Inicia sección de algunos de mi proyectos -->
-   <section style="background-color: #8E806A;">
+   <section style="background-color: #8E806A; padding: 30px 0px 30px 0px;">
+    
      <h2>Algunos de mis proyectos</h2>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
    </section>
     <!-- Finaliza sección de algunos de mi proyectos -->
+
     <!-- Inicia tarjeta de proyecto -->
-   <div style="border: 1px solid #000; width: 33.33%;">
+  <div style="display: inline">
+   <div style="border: 4px solid #fff; width: 80%; margin: auto; border-radius: 10px;">
     <h3>Proyecto 1</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <div>
@@ -143,9 +172,12 @@
     </div>
     <img src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp" alt="" width="100%">
    </div>
-    <!-- Finaliza etiquetas de proyecto -->
+  </div>  
+   <!-- Finaliza etiquetas de proyecto -->
+  
     <!-- Inicia tarjeta de proyecto -->
-   <div style="border: 1px solid #000; width: 33.33%;">
+  <div style="display: inline">
+   <div style="border: 4px solid #fff; width: 80%; margin: auto; border-radius: 10px;">
     <h3>Proyecto 2</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <div>
@@ -158,9 +190,12 @@
     </div>
     <img src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp" alt="" width="100%">
    </div>
+  </div> 
     <!-- Finaliza etiquetas de proyecto -->
+
     <!-- Inicia tarjeta de proyecto -->
-   <div style="border: 1px solid #000; width: 33.33%;">
+  <div style="display: inline">
+   <div style= "border: 4px solid #fff; width: 80%; margin: auto; border-radius: 10px;">
     <h3>Proyecto 3</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <div>
@@ -173,38 +208,44 @@
     </div>
     <img src="https://ivanvotti.com/static/ccb2ec424120520a4e18ac40fb1e12ff/2e3ee/svgjar.webp" alt="" width="100%">
    </div>
+  </div>
     <!-- Finaliza etiquetas de proyecto -->
+
     <!-- Inicia sección de imágen -->
    <section>
        <img src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/8b3f0/working.webp" alt="Contáctenos" width="100%">
    </section>
     <!-- Finaliza sección de imágen -->
     <!-- Inicia sección de formulario -->
-   <section style="background-color: #C3B091;">
+   <section>
        <h2>Contáctenos</h2>
        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quas ratione nulla quis rem quasi odit minus dolorem sunt obcaecati?</p>
        <form action="#">
+         <div style=" margin-bottom: 5px;">
           <input type="text" placeholder="Tu nombre"> 
           <input type="text" placeholder="Tu correo electrónico">
+         </div>
           <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-          <button>Enviar</button>
+          <button style="display: block;">Enviar</button>
        </form>
    </section>
     <!-- Finaliza sección de formulario -->
+
     <!-- Inicia sección de footer -->
-   <footer>
-       <div style="background-color: #E4CDA7;">
-        <p>Diseñado por Mary A. Daboin A.</p>
+   <footer style="padding: 20px 10px; background-color: #FAEEE0;">
+       <div style="display: inline;">
+        <p style="display: inline;">Diseñado por Mary A. Daboin A.</p>
        </div>
-       <div style="background-color: #FFE6BC;">
-         <ul>
-            <li>🤩</li>
-            <li>🙂</li>
-            <li>😉</li>
-            <li>😆</li>
-            <li>🥰</li>
+
+       <div style="display: inline; float: right;">
+         <ul style="display: inline;">
+            <li style="display: inline;">🤩</li>
+            <li style="display: inline;">🙂</li>
+            <li style="display: inline;">😉</li>
+            <li style="display: inline;">😆</li>
+            <li style="display: inline;">🥰</li>
          </ul>
-       </div>
+       </div> 
    </footer>
     <!-- Finaliza sección de footer -->
 </body>
