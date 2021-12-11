@@ -9,20 +9,29 @@
 </head>
 
 <body>
+    <!-- Inicia navbar -->
   <nav>
       <img src="brand/dev-rainbow.png" alt="Logo de mi sitio web" height="64px">
       <!--
         src: Origen de la imagen 
         alt: Descripción de la imagen  
       -->
-      <ul>
-          <li>Github</li>
-          <li>LinkedIn</li>
+      <ul style="display: inline; float: right; height: 36px;">
+          <li style="display: inline; padding: 4px; margin-right: 10px;">
+            <a href="https://github.com/AvrilDaboin18" style="text-decoration: none;">Github</a> 
+          </li>
+
+          <li style="display: inline; padding: 4px; margin-right: 10px;">
+             <a href="#" style="text-decoration: none;">LinkedIn</a> 
+          </li>
       </ul>
       <!--ul: lista desordenada (Unorder List)-->
   </nav>  
-  <header>
-      <img src="Brand/Avatar.png" alt="Foto de Perfil" height="350px">
+    <!-- Finaliza navbar -->
+    <!-- Inicia header -->
+  <header style="background-color: #E4CDA7;">
+      <img src="Brand/Avatar.png" alt="Foto de Perfil" width="30%">
+      <div style="display: inline; position: absolute; padding: 15px 50px 15px 50px;">
       <h4>
           React Developer
       </h4>
@@ -32,10 +41,14 @@
       <a href="https://github.com/AvrilDaboin18">
           Ver más
       </a>
+    </div>
       <!--
           a: sirve para anclar a otros sitios o páginas internas
       -->
   </header>
+    <!-- Finaliza header-->
+    <!-- Inicia sección de descripción -->
+  <section style="background-color: #FFE6BC;">
    <p>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cumque quae qui voluptate illum ipsam dicta vel officia illo tempora dolorum inventore eligendi ex. Saepe.
    </p>
@@ -45,27 +58,21 @@
    <p>
        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, accusantium.
    </p>
-   <section>
-       <p>
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nulla magni nemo ab minus! Modi.
-       </p>
-       <p>
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste culpa odit beatae, aliquid fugiat laborum est commodi minima natus distinctio vel dicta dolores aperiam sit delectus, ex mollitia voluptate maiores quaerat impedit, quis in?
-       </p>
-       <p>
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad illo accusantium quo. Aut?
-       </p>    
-   </section>
-   <section>
+  </section> 
+    <!-- Finaliza sección de descripción -->
+    <!-- Inicia sección de Habilidades -->
+   <section style="background-color: #FAEEE0;padding:30px 0px 30px 0px ;">
        <h2>Habilidades</h2>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure assumenda perferendis similique sed ducimus molestiae placeat ullam delectus illum?</p>
-       <div>
-           <div style="border: 1px solid #000;">
-              <div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="25px">
+       <div style="display: inline-flex;">
+        <div style="display: inline">
+           <div style="display: inline;">
+              <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px">
+                <div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="40px">
                   <h4>Javascript</h4>
                   <span>* 6 años</span>
-              </div>
+                </div>
               <div>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit, dolores, suscipit, culpa accusantium aut ipsum sapiente dolore atque distinctio architecto? Beatae suscipit officia quibusdam, quo expedita maiores doloribus. Inventore.</p> 
               </div>
@@ -75,44 +82,121 @@
                   <span>Gatsby</span>
               </div>
            </div>
-           <div style="border: 1px solid #000;">
-              <div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="25px">
+
+           <div style="display: inline">
+             <div style="display: inline">
+               <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px"> 
+                <div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="40px">
                   <h4>Javascript</h4>
                   <span>* 6 años</span>
-              </div>
-              <div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit, dolores, suscipit, culpa accusantium aut ipsum sapiente dolore atque distinctio architecto? Beatae suscipit officia quibusdam, quo expedita maiores doloribus. Inventore.
-                  </p>
-              </div>
+                </div>
+               <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit, dolores, suscipit, culpa accusantium aut ipsum sapiente dolore atque distinctio architecto? Beatae suscipit officia quibusdam, quo expedita maiores doloribus. Inventore.</p>
+                </div>
               <div>
                   <span>Ember</span>
                   <span>React</span>
                   <span>Gatsby</span>
               </div>
-            <div style="border: 1px solid #000;">
+             </div>
+          </div>
+
+          <div style="display: inline">
+             <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px">
                 <div>
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="25px">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="40px">
                    <h4>Javascript</h4>
                    <span>* 6 años</span> 
-                </div>
-                <div>
+                 </div>
+                 <div>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit, dolores, suscipit, culpa accusantium aut ipsum sapiente dolore atque distinctio architecto? Beatae suscipit officia quibusdam, quo expedita maiores doloribus. Inventore.
                    </p>
-                </div>
-                <div>
+                 </div>
+                 <div>
                    <span>Ember</span>
                    <span>React</span>
                    <span>Gatsby</span> 
                 </div>
+              </div>
             </div>  
-       </div>
+          </div>
    </section>
+    <!-- Finaliza sección de Habilidades -->
+    <!-- Inicia sección de algunos de mi proyectos -->
+   <section style="background-color: #8E806A;">
+     <h2>Algunos de mis proyectos</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   </section>
+    <!-- Finaliza sección de algunos de mi proyectos -->
+    <!-- Inicia tarjeta de proyecto -->
+   <div style="border: 1px solid #000; width: 33.33%;">
+    <h3>Proyecto 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div>
+        <span>Ember</span>
+        <span>React</span>
+        <span>Gatsby</span>
+    </div>
+    <div>
+        <span>Full desing & development</span>
+    </div>
+    <img src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp" alt="" width="100%">
+   </div>
+    <!-- Finaliza etiquetas de proyecto -->
+    <!-- Inicia tarjeta de proyecto -->
+   <div style="border: 1px solid #000; width: 33.33%;">
+    <h3>Proyecto 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div>
+        <span>Ember</span>
+        <span>React</span>
+        <span>Gatsby</span>
+    </div>
+    <div>
+        <span>Full desing & development</span>
+    </div>
+    <img src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp" alt="" width="100%">
+   </div>
+    <!-- Finaliza etiquetas de proyecto -->
+    <!-- Inicia tarjeta de proyecto -->
+   <div style="border: 1px solid #000; width: 33.33%;">
+    <h3>Proyecto 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div>
+        <span>Ember</span>
+        <span>React</span>
+        <span>Gatsby</span>
+    </div>
+    <div>
+        <span>Full desing & development</span>
+    </div>
+    <img src="https://ivanvotti.com/static/ccb2ec424120520a4e18ac40fb1e12ff/2e3ee/svgjar.webp" alt="" width="100%">
+   </div>
+    <!-- Finaliza etiquetas de proyecto -->
+    <!-- Inicia sección de imágen -->
+   <section>
+       <img src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/8b3f0/working.webp" alt="Contáctenos" width="100%">
+   </section>
+    <!-- Finaliza sección de imágen -->
+    <!-- Inicia sección de formulario -->
+   <section style="background-color: #C3B091;">
+       <h2>Contáctenos</h2>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quas ratione nulla quis rem quasi odit minus dolorem sunt obcaecati?</p>
+       <form action="#">
+          <input type="text" placeholder="Tu nombre"> 
+          <input type="text" placeholder="Tu correo electrónico">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+          <button>Enviar</button>
+       </form>
+   </section>
+    <!-- Finaliza sección de formulario -->
+    <!-- Inicia sección de footer -->
    <footer>
-       <div style="background-color: #C3B091;">
+       <div style="background-color: #E4CDA7;">
         <p>Diseñado por Mary A. Daboin A.</p>
        </div>
-       <div style="background-color: #E4CDA7;">
+       <div style="background-color: #FFE6BC;">
          <ul>
             <li>🤩</li>
             <li>🙂</li>
@@ -122,6 +206,7 @@
          </ul>
        </div>
    </footer>
+    <!-- Finaliza sección de footer -->
 </body>
 
 
