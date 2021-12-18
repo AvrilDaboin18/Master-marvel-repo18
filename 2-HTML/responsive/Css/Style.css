@@ -1,0 +1,25 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+.evolution {
+    width: 100vw;
+    background-image: url(../2011.jpg);
+    min-height: 320px;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+}
+
+.padre {
+    border: 1px solid #000 ;
+    display: inline-block;
+    width: 50vw;
+}
+
+.hijo {
+    border: 1px solid #038403 ;
+    display: inline-block;
+    width: 50%;
+}

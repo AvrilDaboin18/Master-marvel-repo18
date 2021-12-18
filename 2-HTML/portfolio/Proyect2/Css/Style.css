@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  :root {
+    --background-color: #FFF;
+  }
+  
+  body {
+    background: var(--background-color);
+  }
+  
+  nav {
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  /*.Button-Nav {
+    background-color: white;
+    height: 35px;
+    width: 60px;
+    font-size: 17px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: grayscale(80%);
+    border-radius: 40px;
+    transition-duration: 0.4s;
+
+  } */
+
+  }
+
+  .ButtonNav1:hover {
+    background-color: white;
+    height: 35px;
+    width: 60px;
+    font-size: 17px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .barra-busqueda {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+     
+  }
+  
+  ::placeholder {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300;
+  }
+
+  .barra-busqueda input {
+    height: 50px;
+    width: 900px;
+    border-radius: 40px;
+    border-color: #EEEEEE;
+    border-style: solid;
+    background-color: #EEEEEE;
+    text-indent: 3%;
+    
+  }
+
+  nav ion-icon {
+    width: 30px;
+    height: 32px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  .search {
+    height: 60px;
+    border-radius: 25px;
+    box-shadow: 0;
+    
+  }
+  
+  .search-button {
+    height: 2rem;
+  }
+  body h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  
+  .wrapper-card {
+    padding: 60px;
+    max-width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    justify-content: center;
+    grid-template-rows: masonry;
+    gap: 0.5rem;
+  }
+  
+  .main {
+    width: 1200px;
+    height: 1200px;
+  }
+  
+  /*.wrapper-card {
+    max-height: 100vh;
+    height: auto; 
+    margin: auto;
+    height: 100%;
+    width: 1200px;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    display: flex;
+    
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid blue; 
+    */
+  
+  /* metodologia para hacer la carta */
+  .card {
+    width: 236px;
+    height: 450px;
+    border-radius: 15px;
+    margin: 2rem;
+    position: relative;
+  }
+  
+  .card img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .card:hover::before {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .card:hover button {
+    display: inline-flex;
+  }
+  
+  .card:hover .lowermenu {
+    display: flex;
+  }
+  
+  .card:nth-child(3n) {
+    height: 555px;
+  }
+  
+  .card:nth-child(2n + 2) {
+    height: 366px;
+  }
+  
+  .card:nth-child(5n) {
+    height: 400px;
+  }
+  
+  /* menu superior de la carta */
+  .menu-superior {
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 25px;
+    top: 15px;
+    right: 10px;
+    border-style: none;
+    display: none;
+  }
+  
+  /* menu inferior de la carta */
+  
+  .lowermenu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 10px;
+    border-style: none;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+  }
+  
+  .lowermenu ion-icon {
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .lowermenu button {
+    padding: 10px;
+    background-color: lightgray;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: none;
+  }
+  
+  .lowermenu button a {
+    text-decoration: none;
+    border-style: none;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    nav {
+      display: none;
+    }
+  }
+  
