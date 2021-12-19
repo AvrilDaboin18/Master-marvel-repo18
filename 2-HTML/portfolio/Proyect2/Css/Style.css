@@ -4,92 +4,148 @@
     margin: 0;
   }
   
-  :root {
-    --background-color: #FFF;
-  }
+:root {
+  --background-color: #FFF;
+}
   
-  body {
-    background: var(--background-color);
-  }
+body {
+  background: var(--background-color);
+}
+/*Inicio de Corrección*/  
+nav {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
+  padding-top: 4px;
+}
+
+.ButtonNav1 {
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  color: black;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.ButtonNav1:hover {
+  background-color: black;
+  color: white;
+}
   
-  nav {
-    width: 100%;
-    height: auto;
-    background-color: #FFF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
-    padding: 1rem;
-  }
+.Button-Nav2 {
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  color: black;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
 
-  /*.Button-Nav {
-    background-color: white;
-    height: 35px;
-    width: 60px;
-    font-size: 17px;
-    font-weight: 550;
-    font-family: Arial, Helvetica, sans-serif;
-    filter: grayscale(80%);
-    border-radius: 40px;
-    transition-duration: 0.4s;
+.Button-Nav2:hover {
+  background-color: black;
+  color: white;
+}
 
-  } */
-
-  }
-
-  .ButtonNav1:hover {
-    background-color: white;
-    height: 35px;
-    width: 60px;
-    font-size: 17px;
-    font-weight: 550;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .barra-busqueda {
-    height: 40px;
-    display: flex;
-    flex-direction: row;
+.barra-busqueda {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
      
-  }
-  
-  ::placeholder {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 300;
-  }
+}
 
-  .barra-busqueda input {
-    height: 50px;
-    width: 900px;
-    border-radius: 40px;
-    border-color: #EEEEEE;
-    border-style: solid;
-    background-color: #EEEEEE;
-    text-indent: 3%;
-    
-  }
+.barra-busqueda input {
+  height: 50px;
+  width: 800px;
+  border-radius: 40px;
+  border-color: #EEEEEE;
+  border-style: solid;
+  background-color: #EEEEEE;
+  text-indent: 3%;  
+}
 
   nav ion-icon {
+    background-color: white;
+    border: none;
+    border-radius: 35px;
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    height: 20px;
     width: 30px;
-    height: 32px;
+    padding: 14px 20px;
+  }
+
+   ion-icon:hover {
+    background-color: #EEEEEE;
+    color: grey;
   }
   
-  nav a {
+
+.Icons-notifications {
     text-decoration: none;
     color: black;
     padding: 10px;
     border-radius: 25px;
     transition: background-color 0.3s;
+    padding-top: 28px;
   }
   
-  nav a:hover {
+  .Icons-Chat {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    padding-top: 28px;
+  }
+
+  .Icons-Perfil {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    padding-top: 28px;
+  }
+
+  .Icons-notifications:hover {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+  .Icons-Chat:hover {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+  .Icons-Perfil:hover {
     background-color: white;
     padding: 10px;
     border-radius: 25px;
   }
   
+/*Fin de la corrección*/
+
   .search {
     height: 60px;
     border-radius: 25px;
@@ -115,31 +171,16 @@
     justify-content: center;
     grid-template-rows: masonry;
     gap: 0.5rem;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 5px;
   }
   
   .main {
     width: 1200px;
     height: 1200px;
   }
-  
-  /*.wrapper-card {
-    max-height: 100vh;
-    height: auto; 
-    margin: auto;
-    height: 100%;
-    width: 1200px;
-    background-color: whitesmoke;
-    margin-top: 2rem;
-    display: flex;
-    
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    border: 1px solid blue; 
-    */
-  
-  /* metodologia para hacer la carta */
+
   .card {
     width: 236px;
     height: 450px;
@@ -242,9 +283,48 @@
     color: white;
   }
   
-  @media only screen and (max-width: 800px) {
-    nav {
-      display: none;
-    }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #EEEEEE;
+    color: gray;
+    vertical-align: baseline;
   }
-  
+
+  .footer {
+     display: inline;
+     
+   }
+
+   .footer div ul {
+    margin: 0%;
+    float: right;
+  }
+
+   .float-right {
+     display: inline;
+     vertical-align: baseline;
+     display: inline;
+     text-align: left;
+     
+   }
+
+   .icon-list {
+    filter: grayscale(100%);
+    transition: all 0.15s ease-out;
+    vertical-align: baseline;
+    display: inline;
+    text-align: left;
+   }
+
+   .icon-list:hover {
+    filter: grayscale(0%);
+    vertical-align: baseline;
+    text-align: left;
+   }
+
+
+
+
