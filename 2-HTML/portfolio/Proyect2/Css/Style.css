@@ -232,7 +232,6 @@ nav {
     height: 400px;
   }
   
-  /* menu superior de la carta */
   .menu-superior {
     position: absolute;
     color: white;
@@ -244,8 +243,6 @@ nav {
     border-style: none;
     display: none;
   }
-  
-  /* menu inferior de la carta */
   
   .lowermenu {
     position: absolute;
@@ -308,7 +305,6 @@ nav {
      vertical-align: baseline;
      display: inline;
      text-align: left;
-     
    }
 
    .icon-list {
