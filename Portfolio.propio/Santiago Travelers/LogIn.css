@@ -1,0 +1,17 @@
+body {
+    background-color: #EFEFEF;
+}
+
+.field {
+    width: 25%;
+    height: 50%;
+    margin-left: 35pc;
+}
+
+header {
+    
+    height: 50pc;
+    width: 30pc;
+    top: 100pc;
+    left : 30pc;
+}
