@@ -2,18 +2,39 @@ body {
     background-color: #EFEFEF;
 }
 
-.field {
-    width: 25%;
-    height: 50%;
-    margin-left: 35pc;
+.nav {
+    background-color: #FF9F45;
+    color: black;
+    
 }
 
-.Logo1 {
-    margin-top: 2%;
-    margin-left: 41%;
-    margin-bottom: 2%;
-    height: 15pc;
-    width: 15pc;
+.Img-Nav {
+    width: 12pc;
+}
+
+.tarjetas-all {
+    margin-left: 17%;
+}
+
+.col {
+    width: 41%;
+    height: 50%;
+}
+
+.card2 {
+    width: 41%;
+    margin-bottom: 8mm;
+}
+
+.img1 {
+    width: 41pc;
+    height: 5%;
+    margin-left: 0%;
+}
+
+.img2 {
+    width: 32pc;
+    height: 21pc;
     
 }
 

@@ -1,0 +1,40 @@
+1-. Index { (En proceso)
+    - html
+    - css
+}
+
+2-. Sign up { (Listo)
+    - html
+    - css
+}
+
+3-. Log in { (Listo)
+    - html
+    - css
+}
+
+4-. Tours { (En proceso)
+    - html 
+    - css
+}
+
+5-. Paquetes {
+    - html
+    - css
+}
+
+6-. Hoteleria y Transporte(? { 
+    - html
+    - css
+}
+
+7-. Reservar { 
+    - html
+    - css
+}
+
+8-. Contáctanos {
+    - html 
+    - css
+}
+
